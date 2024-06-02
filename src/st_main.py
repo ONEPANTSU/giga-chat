@@ -9,6 +9,9 @@ from services.chatbot.gigachat import Gigachat
 
 
 def main():
+    st.set_page_config(
+        page_title="SoftBananas GPT",
+    )
     config = GigachatConfig(
         client_id=st.secrets["GIGACHAT_CLIENT_ID"],
         client_secret=st.secrets["GIGACHAT_CLIENT_SECRET"],
